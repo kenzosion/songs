@@ -4,9 +4,13 @@ import SongList from './SongList';
 export default class App extends Component {
   render() {
     return (
-      <div className="ui container" style={{marginTop: '20px'}}>
-        <SongList />
+      <div className="ui container grid" style={{ marginTop: "20px" }}>
+        <div className="ui row">
+          <div className="column eight wide">
+            <SongList />
+          </div>
+        </div>
       </div>
-    )
+    );
   }
 }
